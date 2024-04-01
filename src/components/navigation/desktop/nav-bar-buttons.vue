@@ -1,11 +1,11 @@
 <template>
-  <div class="nav-bar__buttons">
+  <div class="flex flex-row gap-4">
     <template v-if="!isAuthenticated">
-      <SignupButton />
-      <LoginButton />
+      <SignupButton v-if="!isAuthenticated" />
+      <LoginButton v-if="!isAuthenticated" />
     </template>
     <template v-if="isAuthenticated">
-      <LogoutButton />
+      <LogoutButton v-if="isAuthenticated" />
     </template>
   </div>
 </template>

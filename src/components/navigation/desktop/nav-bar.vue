@@ -1,11 +1,9 @@
 <template>
-  <div class="nav-bar__container">
-    <nav class="nav-bar">
-      <NavBarBrand />
-      <NavBarTabs />
-      <NavBarButtons />
-    </nav>
-  </div>
+  <nav class="flex flex-row justify-between w-full p-4">
+    <NavBarBrand />
+    <NavBarTabs />
+    <NavBarButtons />
+  </nav>
 </template>
 
 <script setup>

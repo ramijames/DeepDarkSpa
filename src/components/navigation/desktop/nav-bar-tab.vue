@@ -3,7 +3,7 @@
     :to="props.path"
     exact
     class="nav-bar__tab"
-    active-class="nav-bar__tab--active"
+    active-class="nav-bar__tab--active text-crt-9"
   >
     {{ props.label }}
   </router-link>
@@ -15,3 +15,7 @@ const props = defineProps({
   label: String,
 });
 </script>
+
+<style scoped>
+
+</style>

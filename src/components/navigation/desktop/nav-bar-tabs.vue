@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-bar__tabs">
+  <div class="flex flex-row gap-4">
     <NavBarTab path="/profile" label="Profile" />
     <NavBarTab path="/public" label="Public" />
     <template v-if="isAuthenticated">
