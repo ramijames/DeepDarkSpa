@@ -9,3 +9,16 @@
     </router-link>
   </div>
 </template>
+
+<script setup>
+
+
+</script>
+
+<style scoped>
+
+.logo {
+  filter: drop-shadow(0 0 10px #9200E7);
+}
+
+</style>
