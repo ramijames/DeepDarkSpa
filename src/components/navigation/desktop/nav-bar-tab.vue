@@ -2,8 +2,8 @@
   <router-link
     :to="props.path"
     exact
-    class="nav-bar__tab"
-    active-class="nav-bar__tab--active text-crt-9"
+    class="navbar-tab"
+    active-class="text-crt-9"
   >
     {{ props.label }}
   </router-link>
@@ -17,5 +17,9 @@ const props = defineProps({
 </script>
 
 <style scoped>
+
+.navbar-tab {
+  line-height: 44px;
+}
 
 </style>

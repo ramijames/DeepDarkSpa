@@ -1,5 +1,5 @@
 <template>
-  <button class="px-8 py-2 bg-crt-4 border-b-4 border-crt-0" @click="handleLogout">Log Out</button>
+  <button class="px-8 py-2 bg-crt-8 border-b-4 border-crt-0" @click="handleLogout">Log Out</button>
 </template>
 
 <script setup>
