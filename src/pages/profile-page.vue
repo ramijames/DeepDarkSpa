@@ -1,13 +1,13 @@
 <template>
   <PageLayout class="profile-bg w-full">
-    <section class="flex flex-row justify-center mt-8">
-      <img :src="user.picture" alt="Profile" class="w-44 h-44 rounded-full overflow-hidden border-4 border-crt-5" />
+    <section class="flex flex-row justify-center mx-auto mt-8 ring-4 ring-crt-5 ring-offset-0 w-44 h-44 rounded-full">
+      <img :src="user.picture" alt="Profile" class="w-44 h-44 rounded-full overflow-hidden border-4 border-crt-F" />
     </section>
-    <h1 class="mx-auto max-w-xl text-5xl text-center font-bold text-crt-F oswald w-full pb-14 mt-8">
+    <h1 class="mx-auto max-w-xl text-5xl text-center font-bold text-crt-F oswald w-full pb-14 mt-8 profile-name">
       {{ user.name }}
     </h1>
     <section class="max-w-xl mx-auto flex flex-col">
-      <div class="w-full mb-8 border-b-2 border-crt-F pb-8">
+      <div class="w-full mb-8 border-b-4 border-crt-F pb-8">
         <h2 class="text-2xl text-crt-F ">Profile</h2>
       </div>
       <div class="w-full">
@@ -42,6 +42,14 @@ const code = user ? JSON.stringify(user.value, null, 2) : "";
 </script>
 
 <style scoped>
+
+.profile-pic {
+  box-shadow: inset 0 0 10px rgba(255,255,255,1);
+}
+
+.profile-name {
+  text-shadow: 0 4px 0px #51027e, 0 6px 12px rgba(0, 0, 0, .6), 0 38px 22px #540483bd;
+}
 
 .profile-bg {
   background-color: #0B0610;

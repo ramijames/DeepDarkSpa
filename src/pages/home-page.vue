@@ -9,11 +9,11 @@
       </section>
       <section class="flex flex-row justify-center gap-4 mb-48 z-10">
         <template v-if="!isAuthenticated">
-          <SignupButton v-if="!isAuthenticated" />
-          <LoginButton v-if="!isAuthenticated" />
+          <SignupButton />
+          <LoginButton />
         </template>
         <template v-if="isAuthenticated">
-          <LogoutButton v-if="isAuthenticated" />
+          <LoginButton />
         </template>
       </section>
       <section class="w-full absolute bottom-0 rocks"></section>
