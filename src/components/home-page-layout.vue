@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full homepage-layout flex flex-col px-8">
+  <div class="w-full h-full homepage-layout flex flex-col">
     <!-- <NavBar /> -->
     <!-- <MobileNavBar /> -->
     <slot /> <!-- This pulls in the content from the home-page.vue file -->

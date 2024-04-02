@@ -1,5 +1,5 @@
 <template>
-  <button class="px-8 py-2 bg-crt-4 border-b-4 border-crt-0" @click="handleLogin">Log In</button>
+  <button class="px-16 py-4 text-xl bg-crt-4 border-b-4 border-crt-0" @click="handleLogin">Log In</button>
 </template>
 
 <script setup>
