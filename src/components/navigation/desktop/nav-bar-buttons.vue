@@ -5,7 +5,7 @@
       <LoginButton v-if="!isAuthenticated" />
     </template>
     <template v-if="isAuthenticated">
-      <LogoutButton v-if="isAuthenticated" />
+      <!-- Enter Dungeon -->
     </template>
   </div>
 </template>

@@ -5,7 +5,7 @@
         <img src="@/assets/images/deep-dark-logo.png" class="w-1/2 h-auto mb-8" alt="Deep Dark" />
       </p>
       <section class="mx-auto mb-8 text-center main-text">
-        <h2 class="text-5xl font-bold uppercase text-crt-5 oswald">Create nightmares</h2>
+        <h2 class="text-5xl font-bold uppercase text-crt-4 oswald">Create nightmares</h2>
         <h2 class="text-5xl font-bold uppercase mb-4 text-crt-5 oswald">Experience dreams</h2>
         <h3></h3>
       </section>
