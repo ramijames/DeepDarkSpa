@@ -1,15 +1,12 @@
 <template>
-  <PageLayout class="profile-bg w-full">
+  <PageLayout class="profile-bg w-full flex flex-col justify-between mb-8">
     <section class="flex flex-row justify-center mx-auto mt-8 ring-4 ring-crt-5 ring-offset-0 w-44 h-44 rounded-full">
       <img :src="user.picture" alt="Profile" class="w-44 h-44 rounded-full overflow-hidden border-4 border-crt-F" />
     </section>
     <h1 class="mx-auto max-w-xl text-5xl text-center font-bold text-crt-F oswald w-full pb-14 mt-8 profile-name">
       {{ user.name }}
     </h1>
-    <section class="max-w-xl mx-auto flex flex-col">
-      <div class="w-full mb-8 border-b-4 border-crt-F pb-8">
-        <h2 class="text-2xl text-crt-F ">Profile</h2>
-      </div>
+    <section class="w-full max-w-xl mx-auto flex flex-col">
       <div class="w-full">
         <div class="flex flex-row justify-between mt-4">
           <p class="text-base text-crt-F">Email</p>
@@ -25,9 +22,7 @@
         </div>
       </div>
     </section>
-    <section class="max-w-xl mx-auto flex flex-col justify-start mt-16">
-      <LogoutButton class="" v-if="!isAuthenticated" />
-    </section>
+    <LogoutButton class="w-full max-w-xl mx-auto" v-if="!isAuthenticated" />
   </PageLayout>
 </template>
 

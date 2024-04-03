@@ -2,7 +2,7 @@
   <div class="">
     <router-link to="/">
       <img
-        class="logo w-44 h-auto"
+        class="logo w-60 h-auto mt-4"
         src="@/assets/images/deep-dark-logo.png"
         alt="Deep Dark"
       />
@@ -16,9 +16,5 @@
 </script>
 
 <style scoped>
-
-.logo {
-  filter: drop-shadow(0 0 10px #9200E7);
-}
 
 </style>

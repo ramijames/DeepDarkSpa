@@ -1,5 +1,5 @@
 <template>
-  <button class="px-16 py-4 text-xl bg-crt-5 border-b-4 border-crt-0" @click="handleSignUp">Sign Up</button>
+  <button class="px-16 py-4 text-xl bg-crt-5 rounded-full border-b-4 border-crt-0" @click="handleSignUp">Sign Up</button>
 </template>
 
 <script setup>

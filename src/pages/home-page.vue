@@ -81,7 +81,6 @@ const { isAuthenticated } = useAuth0();
   background-size: cover;
   background-position: bottom center;
   transition: all 0.5s ease-in-out;
-  filter: drop-shadow(0 0 10px #000000e0);
 }
 
 @media only screen and (min-width: 1400px) {

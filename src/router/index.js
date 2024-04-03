@@ -5,6 +5,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const NotFoundPage = () => import("@/pages/not-found-page.vue");
 const ProfilePage = () => import("@/pages/profile-page.vue");
+const TownPage = () => import("@/pages/town-page.vue");
 const PublicPage = () => import("@/pages/public-page.vue");
 const ProtectedPage = () => import("@/pages/protected-page.vue");
 const AdminPage = () => import("@/pages/admin-page.vue");
@@ -19,6 +20,12 @@ const routes = [
     path: "/profile",
     name: "profile",
     component: ProfilePage,
+    beforeEnter: authGuard,
+  },
+  {
+    path: "/town",
+    name: "town",
+    component: TownPage,
     beforeEnter: authGuard,
   },
   {
