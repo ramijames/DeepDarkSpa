@@ -1,7 +1,7 @@
 <template>
   <HomePageLayout>
     <main class="h-screen min-h-screen relative flex flex-col hp-bg">
-      <img src="@/assets/images/deep-dark-logo.png" class="w-60 mx-auto h-auto mt-8" id="homepage-logo" alt="Deep Dark" />
+      <img src="@/assets/images/deep-dark-logo.png" class="w-96 mx-auto h-auto mt-12 mb-0" id="homepage-logo" alt="Deep Dark" />
       <h1 class="big-text poppins-extrabold mx-auto">GET LOST</h1>
       <!-- <img src="@/assets/images/itsalive.png" class="woman-left" alt="It's Alive!" /> -->
       <section class="itsalive"></section>
@@ -15,13 +15,13 @@
         </template>
       </section>
     </main>
-    <section class="explainer py-48 relative">
-      <h2 class="text-4xl text-center font-bold uppercase oswald">What lurks in the Deep Dark?</h2>
+    <section class="flex flex-col justify-center explainer py-48 relative">
+      <h2 class="medium-text poppins-extrabold mx-auto mb-8">What lurks below?</h2>
       <section class="mx-auto mb-8 text-center main-text z-10">
         <h3 class="text-2xl mt-4 max-w-96 mx-auto">In the world of the Deep Dark, you build dungeons and create exciting experiences for adventurers seeking riches, fame, and glory.</h3>
       </section>
-      <p class="text-center max-w-3xl mx-auto mt-4">The Deep Dark is a platform for creating and sharing tabletop role-playing game (TTRPG) content. You can create dungeons, monsters, and adventures for your friends to play through. You can also play through the content created by others.</p>
-      <section class="w-full absolute bottom-0 rocks"></section>
+      <p class="text-center max-w-3xl mx-auto mt-4 z-10">The Deep Dark is a platform for creating and sharing tabletop role-playing game (TTRPG) content. You can create dungeons, monsters, and adventures for your friends to play through. You can also play through the content created by others.</p>
+      <section class="w-full absolute bottom-0 rocks z-0"></section>
     </section>
   </HomePageLayout>
 </template>
@@ -44,17 +44,30 @@ const { isAuthenticated } = useAuth0();
   filter: drop-shadow(0 0 10px #9200E7);
 }
 
-h1.big-text {
+.big-text {
   font-size: 20vw;
   text-shadow: 0 8px 0px #8f0f39, 0 16px 0px #9200E7, 0 6px 12px rgba(0, 0, 0, .6), 0 38px 22px #540483bd;
   line-height: 20vw;
+}
+
+.medium-text {
+  font-size: 6vw;
+  text-shadow: 0 8px 0px #8f0f39, 0 16px 0px #9200E7, 0 6px 12px rgba(0, 0, 0, .6), 0 38px 22px #540483bd;
+  line-height: 6vw;
 }
 
 .hp-bg {
   background-color: #0B0610;
   background-image: url("@/assets/images/red-sky.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .hp-bg {
+    background-position: bottom left;
+  }
 }
 
 .itsalive {
@@ -67,9 +80,11 @@ h1.big-text {
   background-image: url("@/assets/images/itsalive.png");
   background-size: cover;
   background-position: bottom center;
+  transition: all 0.5s ease-in-out;
+  filter: drop-shadow(0 0 10px #000000e0);
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1400px) {
   .itsalive {
     position:absolute;
     width:auto;
@@ -80,6 +95,12 @@ h1.big-text {
     background-image: url("@/assets/images/itsalive.png");
     background-size: cover;
     background-position: bottom center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .itsalive {
+    background-position: bottom left;
   }
 }
 
@@ -94,7 +115,7 @@ h1.big-text {
   background-color: #2C0217;
   background-image: url("@/assets/images/skullman.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 
 .main-text h2 {
