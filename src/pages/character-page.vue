@@ -1,6 +1,12 @@
 <template>
-  <PageLayout class="character-bg w-full h-full">
-    <h1 class="deep-dark-shadow text-center w-full text-4xl poppins-extrabold">Create Your Character</h1>
+  <PageLayout class="character-bg w-full">
+    <h1 class="flex-none deep-dark-shadow text-center w-full text-4xl poppins-extrabold mb-8">Create Your Character</h1>
+    <section id="character-box" class="flex flex-col justify-center flex-grow mx-auto">
+      <div id="character" class="border-4 border-white"></div>
+    </section>
+    <section class="flex-none w-full text-center border-t-4 p-8">
+      character options widget
+    </section>
   </PageLayout>
 </template>
 
@@ -20,6 +26,15 @@ const { user } = useAuth0();
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+}
+
+#character-box {
+
+}
+
+#character {
+  width:160px;
+  height: 160px;
 }
 
 </style>
