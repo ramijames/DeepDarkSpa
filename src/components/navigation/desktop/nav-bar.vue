@@ -1,13 +1,7 @@
 <template>
-  <nav class="flex flex-col justify-between w-full mx-auto max-w-xl py-4 gap-4">
-      <NavBarBrand class="flex flex-row justify-center w-full" />
-      <section v-if="router.currentRoute.value.name !== 'town'" class="flex flex-row justify-center w-full">
-        <NavBarActions class="flex flex-row justify-center w-full" />
-      </section>
-    <!-- <section class="flex flex-row justify-end gap-8">
-      <NavBarTabs />
-      <NavBarButtons />
-    </section> -->
+  <nav class="flex flex-row py-4 gap-4 justify-between">
+    <NavBarBrand />
+    <BackButton v-if="router.currentRoute.value.name !== 'town'" />
   </nav>
 </template>
 
@@ -15,7 +9,7 @@
 import { ref, watchEffect } from 'vue';
 import { useRouter } from 'vue-router';
 import NavBarBrand from "@/components/navigation/desktop/nav-bar-brand.vue";
-import NavBarActions from "@/components/navigation/desktop/nav-bar-actions.vue";
+import BackButton from "@/components/buttons/back-button.vue";
 const router = useRouter();
 const isTownRoute = ref(false);
 

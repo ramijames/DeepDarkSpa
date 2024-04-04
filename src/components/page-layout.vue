@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full max-w-screen-2xl mx-auto page-layout flex flex-col px-8">
+  <div class="h-full mx-auto page-layout flex flex-col px-8">
     <NavBar />
     <!-- <MobileNavBar /> -->
     <slot />

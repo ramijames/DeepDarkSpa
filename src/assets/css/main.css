@@ -52,5 +52,8 @@ input:-webkit-autofill:active{
 
 button,
 .button {
+  /* background: linear-gradient(180deg, #000000 95%, #C81A59 96%); */
   text-shadow:0 2px 0px rgba(0,0,0,0.6);
+  font-family: "Pixelify Sans", sans-serif;
+  box-shadow: 0 4px 0 #000000, 0 8px 0 #9A14ED;
 }

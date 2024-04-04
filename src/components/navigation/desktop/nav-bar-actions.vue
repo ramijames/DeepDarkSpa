@@ -1,7 +1,5 @@
 <template>
-  <div class="flex flex-row gap-4">
-    <BackButton />
-  </div>
+  <BackButton />
 </template>
 
 <script setup>

@@ -6,6 +6,9 @@ import { createRouter, createWebHistory } from "vue-router";
 const NotFoundPage = () => import("@/pages/not-found-page.vue");
 const ProfilePage = () => import("@/pages/profile-page.vue");
 const TownPage = () => import("@/pages/town-page.vue");
+const DreamForgePage = () => import("@/pages/town-page.vue");
+const DungeonPage = () => import("@/pages/town-page.vue");
+const CharacterPage = () => import("@/pages/character-page.vue");
 const PublicPage = () => import("@/pages/public-page.vue");
 const ProtectedPage = () => import("@/pages/protected-page.vue");
 const AdminPage = () => import("@/pages/admin-page.vue");
@@ -26,6 +29,24 @@ const routes = [
     path: "/town",
     name: "town",
     component: TownPage,
+    beforeEnter: authGuard,
+  },
+  {
+    path: "/dreamforge",
+    name: "dreamforge",
+    component: DreamForgePage,
+    beforeEnter: authGuard,
+  },
+  {
+    path: "/dungeon",
+    name: "dungeon",
+    component: DungeonPage,
+    beforeEnter: authGuard,
+  },
+  {
+    path: "/character",
+    name: "character",
+    component: CharacterPage,
     beforeEnter: authGuard,
   },
   {

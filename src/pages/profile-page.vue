@@ -1,12 +1,12 @@
 <template>
   <PageLayout class="profile-bg w-full flex flex-col justify-between mb-8">
-    <section class="flex flex-row justify-center mx-auto mt-8 ring-4 ring-crt-5 ring-offset-0 w-44 h-44 rounded-full">
-      <img :src="user.picture" alt="Profile" class="w-44 h-44 rounded-full overflow-hidden border-4 border-crt-F" />
-    </section>
-    <h1 class="mx-auto max-w-xl text-5xl text-center font-bold text-crt-F oswald w-full pb-14 mt-8 profile-name">
-      {{ user.name }}
-    </h1>
     <section class="w-full max-w-xl mx-auto flex flex-col">
+      <section class="flex flex-row justify-center mx-auto mt-8 ring-4 ring-crt-5 ring-offset-0 w-44 h-44 rounded-full">
+        <img :src="user.picture" alt="Profile" class="w-44 h-44 rounded-full overflow-hidden border-4 border-crt-F" />
+      </section>
+      <h1 class="mx-auto max-w-xl text-5xl text-center font-bold text-crt-F oswald w-full pb-14 mt-8 profile-name">
+        {{ user.name }}
+      </h1>
       <div class="w-full">
         <div class="flex flex-row justify-between mt-4">
           <p class="text-base text-crt-F">Email</p>
@@ -43,12 +43,12 @@ const code = user ? JSON.stringify(user.value, null, 2) : "";
 }
 
 .profile-name {
-  text-shadow: 0 4px 0px #51027e, 0 6px 12px rgba(0, 0, 0, .6), 0 38px 22px #540483bd;
+  text-shadow: 0 4px 0px #51027e, 0 6px 12px rgba(0, 0, 0, .6), 0 8px 22px #540483bd;
 }
 
 .profile-bg {
   background-color: #0B0610;
-  background-image: url("@/assets/images/profile-bg-shifted.jpg");
+  background-image: url("@/assets/images/profile-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100%;

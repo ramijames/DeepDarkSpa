@@ -1,21 +1,23 @@
 <template>
   <PageLayout class="town-bg w-full h-full">
-    <main class="h-full w-full mx-auto max-w-xl flex flex-col justify-end pb-8 gap-2">
-      <router-link to="/dreamforge" class="button rounded-full flex flex-row gap-4 w-full justify-center px-8 py-2 bg-crt-5 border-b-4 border-crt-0">Dreamforge</router-link>
-      <router-link to="/dungeon" class="button rounded-full flex flex-row gap-4 w-full justify-center px-8 py-2 bg-crt-5 border-b-4 border-crt-0">Dungeon</router-link>
-      <router-link to="/profile" class="button rounded-full flex flex-row gap-4 w-full justify-center px-8 py-2 bg-crt-5 border-b-4 border-crt-0">Profile</router-link>
+    <main class="h-full w-full mx-auto flex flex-col justify-end">
+      <div class="town-ui flex flex-row gap-2 mx-auto p-12 justify-center">
+        <router-link to="/character" class="w-1/4 self-center button bg-crt-0 text-center py-4  border-4 border-white">Character</router-link>
+        <router-link to="/dreamforge" class="w-1/4 self-center button bg-crt-0 text-center py-4  border-4 border-white">Dreamforge</router-link>
+        <router-link to="/dungeon" class="w-1/4 self-center button bg-crt-0 text-center py-4  border-4 border-white">Dungeon</router-link>
+        <router-link to="/profile" class="w-1/4 self-center button bg-crt-0 text-center py-4  border-4 border-white">Profile</router-link>
+      </div>
+      
     </main>
   </PageLayout>
 </template>
 
 <script setup>
 import PageLayout from "@/components/page-layout.vue";
-import LogoutButton from "@/components/buttons/logout-button.vue";
 import { useAuth0 } from "@auth0/auth0-vue";
 
 const { user } = useAuth0();
 
-const code = user ? JSON.stringify(user.value, null, 2) : "";
 </script>
 
 <style scoped>
@@ -26,6 +28,13 @@ const code = user ? JSON.stringify(user.value, null, 2) : "";
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+}
+
+.town-ui {
+  background-image: url("@/assets/images/town_ui.png");
+  background-size: 100%;
+  width: 600px;
+  height: 180px;
 }
 
 .choose {
