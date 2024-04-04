@@ -57,3 +57,7 @@ button,
   font-family: "Pixelify Sans", sans-serif;
   box-shadow: 0 4px 0 #000000, 0 8px 0 #9A14ED;
 }
+
+.deep-dark-shadow {
+  text-shadow: 0 4px 0px #51027e, 0 6px 12px rgba(0, 0, 0, .6), 0 8px 22px #55048362;
+}

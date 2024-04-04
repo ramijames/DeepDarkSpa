@@ -4,7 +4,7 @@
       <section class="flex flex-row justify-center mx-auto mt-8 ring-4 ring-crt-5 ring-offset-0 w-44 h-44 rounded-full">
         <img :src="user.picture" alt="Profile" class="w-44 h-44 rounded-full overflow-hidden border-4 border-crt-F" />
       </section>
-      <h1 class="mx-auto max-w-xl text-5xl text-center font-bold text-crt-F oswald w-full pb-14 mt-8 profile-name">
+      <h1 class="deep-dark-shadow mx-auto max-w-xl text-4xl text-center font-bold text-crt-F poppins-extrabold w-full pb-14 mt-8">
         {{ user.name }}
       </h1>
       <div class="w-full">
@@ -36,14 +36,10 @@ const { user } = useAuth0();
 const code = user ? JSON.stringify(user.value, null, 2) : "";
 </script>
 
-<style scoped>
+<style>
 
 .profile-pic {
   box-shadow: inset 0 0 10px rgba(255,255,255,1);
-}
-
-.profile-name {
-  text-shadow: 0 4px 0px #51027e, 0 6px 12px rgba(0, 0, 0, .6), 0 8px 22px #540483bd;
 }
 
 .profile-bg {

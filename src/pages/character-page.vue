@@ -1,6 +1,6 @@
 <template>
   <PageLayout class="character-bg w-full h-full">
-    character
+    <h1 class="deep-dark-shadow text-center w-full text-4xl poppins-extrabold">Create Your Character</h1>
   </PageLayout>
 </template>
 
